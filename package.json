@@ -60,5 +60,9 @@
 	},
 	"bugs": {
 		"url": "https://github.com/subimpact/n8n-nodes-subimpact/issues"
+	},
+	"publishConfig": {
+		"access": "public",
+		"provenance": true
 	}
 }
