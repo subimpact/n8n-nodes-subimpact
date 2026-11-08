@@ -1,0 +1,18 @@
+{
+	"node": "n8n-nodes-subimpact.subimpact",
+	"nodeVersion": "1.0",
+	"codexVersion": "1.0",
+	"categories": ["Marketing & Content", "Data & Storage"],
+	"resources": {
+		"credentialDocumentation": [
+			{
+				"url": "https://console.apify.com/settings/integrations"
+			}
+		],
+		"primaryDocumentation": [
+			{
+				"url": "https://apify.com/subimpact"
+			}
+		]
+	}
+}

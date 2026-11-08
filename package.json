@@ -1,0 +1,63 @@
+{
+	"name": "n8n-nodes-subimpact",
+	"version": "0.1.0",
+	"description": "n8n nodes for Subimpact Apify actors: Google Search with AI Overviews, Google AI Mode answers, and food delivery reviews.",
+	"license": "MIT",
+	"homepage": "https://apify.com/subimpact",
+	"author": {
+		"name": "subimpact",
+		"email": "me@subimpact.net"
+	},
+	"keywords": [
+		"n8n-community-node-package",
+		"n8n",
+		"apify",
+		"serp",
+		"google-search",
+		"google-ai-overviews",
+		"ai-mode",
+		"foodpanda",
+		"yemeksepeti",
+		"foodora",
+		"reviews"
+	],
+	"scripts": {
+		"build": "n8n-node build",
+		"build:watch": "tsc --watch",
+		"dev": "n8n-node dev",
+		"lint": "n8n-node lint",
+		"lint:fix": "n8n-node lint --fix",
+		"test": "npm run build && node --test test/*.test.mjs",
+		"prepublishOnly": "n8n-node prerelease"
+	},
+	"files": [
+		"dist"
+	],
+	"n8n": {
+		"n8nNodesApiVersion": 1,
+		"strict": true,
+		"credentials": [
+			"dist/credentials/SubimpactApifyApi.credentials.js"
+		],
+		"nodes": [
+			"dist/nodes/Subimpact/Subimpact.node.js"
+		]
+	},
+	"devDependencies": {
+		"@n8n/node-cli": "^0.55.5",
+		"@types/node": "^22.18.0",
+		"eslint": "9.39.4",
+		"prettier": "3.8.3",
+		"typescript": "5.9.3"
+	},
+	"peerDependencies": {
+		"n8n-workflow": "*"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/subimpact/n8n-nodes-subimpact.git"
+	},
+	"bugs": {
+		"url": "https://github.com/subimpact/n8n-nodes-subimpact/issues"
+	}
+}

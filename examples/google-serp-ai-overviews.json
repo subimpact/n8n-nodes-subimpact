@@ -1,0 +1,39 @@
+{
+	"name": "Subimpact Google Search with AI Overviews",
+	"nodes": [
+		{
+			"parameters": {},
+			"id": "a1b2c3d4-0001-4000-8000-000000000001",
+			"name": "When clicking Execute Workflow",
+			"type": "n8n-nodes-base.manualTrigger",
+			"typeVersion": 1,
+			"position": [-220, 0]
+		},
+		{
+			"parameters": {
+				"resource": "googleSerp",
+				"operation": "runSync",
+				"serpQueries": "best crm for startups",
+				"serpCountry": "us",
+				"serpLanguage": "en",
+				"device": "desktop",
+				"maxResults": 10,
+				"waitTimeoutSecs": 300
+			},
+			"id": "a1b2c3d4-0001-4000-8000-000000000002",
+			"name": "Subimpact Web Data",
+			"type": "n8n-nodes-subimpact.subimpact",
+			"typeVersion": 1,
+			"position": [0, 0]
+		}
+	],
+	"connections": {
+		"When clicking Execute Workflow": {
+			"main": [[{ "node": "Subimpact Web Data", "type": "main", "index": 0 }]]
+		}
+	},
+	"active": false,
+	"settings": { "executionOrder": "v1" },
+	"pinData": {},
+	"tags": []
+}
