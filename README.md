@@ -34,6 +34,8 @@ All actor runs are executed on your own Apify account with this token.
 
 ## Operations
 
+Full docs, sample output and dated price comparisons for each actor behind these operations: [subimpact.net/apis](https://subimpact.net/apis/).
+
 Each resource supports three operations:
 
 - **Run and Get Results**: calls `POST /v2/acts/<actorId>/run-sync-get-dataset-items?timeout=<seconds>` and returns the dataset items. The wait timeout is configurable from 1 to 300 seconds and defaults to 300.
